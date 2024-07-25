@@ -1,0 +1,38 @@
+<form action="/users/create" method="post">
+    <div>
+        <label for="first_name">First Name</label>
+        <input type="text" name="first_name" id="first_name">
+        {% for message in get_flashed_messages(category_filter=['err_users_first_name']) %}
+        <p class="err-msg">{{message}}</p>
+        {% endfor %}
+    </div>
+    <div>
+        <label for="last_name">Last Name</label>
+        <input type="text" name="last_name" id="last_name">
+        {% for message in get_flashed_messages(category_filter=['err_users_last_name']) %}
+        <p class="err-msg">{{message}}</p>
+        {% endfor %}
+    </div>
+    <div>
+        <label for="username">Username</label>
+        <input type="text" name="username" id="username">
+        {% for message in get_flashed_messages(category_filter=['err_users_username']) %}
+        <p class="err-msg">{{message}}</p>
+        {% endfor %}
+    </div>
+    <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password">
+        {% for message in get_flashed_messages(category_filter=['err_users_password']) %}
+        <p class="err-msg">{{message}}</p>
+        {% endfor %}
+    </div>
+    <div>
+        <label for="confirm_password">Confirm Password</label>
+        <input type="password" name="confirm_password" id="confirm_password">
+        {% for message in get_flashed_messages(category_filter=['err_users_confirm_password']) %}
+        <p class="err-msg">{{message}}</p>
+        {% endfor %}
+    </div>
+    <button>Submit</button>
+</form>
