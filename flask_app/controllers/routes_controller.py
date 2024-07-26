@@ -12,4 +12,4 @@ def index():
 def dashboard():
     if "uuid" not in session:
         return redirect('/')
-    return render_template('/users/dashboard.html')
+    return render_template('/users/home.html')
