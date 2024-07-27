@@ -1,3 +1,22 @@
-<div>
-    <p>quick access buttons</p>
+<div class="navbar-center">
+    <!-- <a class="btn btn-ghost text-xl">Trip Planner</a> -->
+    <ul class="menu menu-horizontal bg-base-200 rounded-box">
+        <li>
+            <a class="tooltip tooltip-bottom" data-tip="Home">
+                <img src="{{ url_for('static', filename='img/home.png') }}" class="h-12 w-12"
+                    alt="Motorcycle Ride">
+            </a>
+        </li>
+        <li>
+            <a class="tooltip tooltip-bottom" data-tip="Rides">
+                <img src="{{ url_for('static', filename='img/motorcycle4.png') }}" class="h-12 w-12"
+                    alt="Motorcycle Ride">
+            </a>
+        </li>
+        <li>
+            <a class="tooltip tooltip-bottom" data-tip="Explore">
+                <img src="{{ url_for('static', filename='img/map.png') }}" class="h-12 w-12" alt="Motorcycle Ride">
+            </a>
+        </li>
+    </ul>
 </div>

@@ -1,31 +1,17 @@
 {% extends 'base_templates/base.html' %}
 
 {% block base_content %}
-<!-- <div class="grid grid-cols-12 bg-green-200 h-screen">
-        <div class="col-span-full bg-blue-500 h-1/6">
-            <p>test</p>
-        </div>
-        <div class="h-5/6">
-            <div class="col-span-2 bg-green-400">
-                <p>testing</p>
-            </div>
-            <div class="col-span-10">
-                <p>main content area</p>
-            </div>
-        </div>
-    </div> -->
-
 <div class="h-screen">
-    <div class="bg-green-200 h-[5vh]">
+    <div class="bg-green-200 h-[10vh]">
         {% include 'navigation/top.html' %}
     </div>
     <div class="flex flex-col items-center">
         <div class="max-w-screen-2xl w-full">
-            <div class="grid grid-cols-12 bg-green-400 h-[95vh]">
-                <div class="col-span-3 bg-blue-200">
+            <div class="grid grid-cols-12 bg-green-400 h-[90vh]">
+                <!-- <div class="col-span-1 bg-blue-200">
                     {% include 'navigation/side.html' %}
-                </div>
-                <div class="col-span-9 bg-blue-500">
+                </div> -->
+                <div class="col-span-12 bg-blue-500">
                     {% block dashboard_content %}
                         
                     {% endblock dashboard_content %}
@@ -33,6 +19,5 @@
             </div>
         </div>
     </div>
-
 </div>
 {% endblock base_content %}
